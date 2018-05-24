@@ -1,0 +1,9 @@
+Library
+obj
+Packages
+ProjectSettings
+Temp
+.vscode
+Assembly-CSharp.csproj
+Assembly-CSharp-Editor.csproj
+Idiomatic.sln
