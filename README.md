@@ -1,7 +1,7 @@
 
 #### Idiomatic
 
-:love_hotel: This is a 3d game made in [Unity](https://unity3d.com/) with C#. The goal is to create a educational game about learning a new idiom
+:love_hotel: This is a 3d game made in [Unity](https://unity3d.com/) with C#. The goal is to create a educational game about learning a new idiom - [Screenshot](https://github.com/Sphinxs/Idiomatic/blob/master/screenshot.png)
 
 #### Install
 
