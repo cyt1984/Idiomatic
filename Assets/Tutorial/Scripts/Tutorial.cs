@@ -17,17 +17,9 @@ public class Tutorial : MonoBehaviour {
 
 	public Sprite en, pt;
 
-	private AudioSource uiConfirmation;
-
-	public bool playTrack = false;
-
-	public void LateUpdate() {
+	public void Update() {
 		if (Input.GetKeyDown(KeyCode.Escape))
 			SceneManager.LoadScene("Menu");
-	}
-
-	public void Start() {
-		uiConfirmation = GetComponent<AudioSource> ();
 	}
 
 	public void ChangeScene(string name) {
@@ -35,18 +27,15 @@ public class Tutorial : MonoBehaviour {
 	}
 
 	public void ChangeImg() {
-		if(btnText.text.ToString() == "Português") {
-			btnText.text = "English";
+		if(btnText.text.ToString() == "Pt") {
+			btnText.text = "En";
 
 			sinopse.sprite = pt;
 		} else {
-			btnText.text = "Português";
+			btnText.text = "Pt";
 
 			sinopse.sprite = en;
 		}
-
-		if(playTrack)
-			uiConfirmation.Play();
 	}
 
 }

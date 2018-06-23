@@ -1,16 +1,18 @@
 
 #### Idiomatic
 
-![Idiomatic Logo](https://i.imgur.com/F4iPGgO.png "Idiomatic")
+:love_hotel: Aducational game with Unity 3D and C#
 
-This is a 3d game made in [Unity](https://unity3d.com/) with C#. The goal is to create a educational game about learning a new idiom - [Screenshot](https://github.com/Sphinxs/Idiomatic/blob/master/screenshot.png)
+#### About
+
+The goal is create a educational game about teaching a new language. [Screenshot](https://github.com/Sphinxs/Idiomatic/blob/master/screenshot.png).
 
 #### Install
 
-To install you can download Unity on [this](https://unity3d.com/pt/get-unity/download) ( Or [here](https://forum.unity.com/threads/unity-on-linux-release-notes-and-known-issues.350256/) if you use Linux ) page and follow the steps
+Download Unity 3D [here](https://unity3d.com/pt/get-unity/download) or [here](https://forum.unity.com/threads/unity-on-linux-release-notes-and-known-issues.350256/) if you in Linux, and follow the steps.
 
 #### Run
 
-To run you need to clone this repository and then create a new project on Unity, when you do it, copy the Assets from the repository you have cloned and past on your new project, add the **Scenes** to the **Building Settings** and then run the game on Unity or compile it to your platform
+Clone this repository and then create a new project on Unity 3D, replace the folder **Assets** from your ' new repository ' for the **Assets** in this repository and then start the Unity 3D.
 
-**Obs** : If you're in Linux, you can unzip ( `tar -xvzf` ) the file in the folder *Executable* and just run it
+**Obs** : Add the **Scenes** to the **Building Settings**
