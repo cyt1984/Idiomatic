@@ -19,12 +19,8 @@ public class PrefabEnemy : MonoBehaviour {
 
 	private GameObject player;
 
-	public GameObject explosion;
-
 	public AudioSource rightSource, wrongSource, over;
 
-	public bool explosionMode = false;
-	
 	private void Start () {
 		pointsCounter = 3;
 		
@@ -65,35 +61,26 @@ public class PrefabEnemy : MonoBehaviour {
 
 				status.UpdateWordStatus ();
 
-				if(pointsCounter >= 30) {
+				if(pointsCounter >= 45) {
 					SceneManager.LoadScene("Win");
 				}
 			} else {
-				pointsCounter -= 1;
-
-				status.SetPoints (pointsCounter);
-
-				if (pointsCounter == 0) {
-					// over.Play();
-
-					SceneManager.LoadScene("Fail");
-				}
-				
-				if(explosionMode) {
-					Instantiate (explosion, new Vector3 (transform.position.x, transform.position.y, transform.position.z), Quaternion.identity);
-
-					DestroyImmediate(explosion);
-				}
-
-				wrongSource.Play ();
-
 				player.transform.position = new Vector3 (0f, 1f, 0f);
 
 				player.transform.Rotate (0f, 0f, 0f, Space.World);
 
+				pointsCounter -= 1;
+				
+				status.SetPoints (pointsCounter);
+				
+				if (pointsCounter == 0)
+					SceneManager.LoadScene("Fail");
+
 				enemyScript.SetAllWords ();
 
 				status.UpdateWordStatus ();
+			
+				wrongSource.Play ();
 			}
 
 			if(pointsCounter >= 10) {

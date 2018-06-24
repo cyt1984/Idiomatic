@@ -36,11 +36,11 @@ public class Status : MonoBehaviour {
 	public void UpdateWordStatus () {
 		cacheWord = enemyScript.GetEnemyText (Random.Range (0, enemyScript.quantityEnemys), "Text Enemy");
 
-		SetUiElementText (word, cacheWord);
+		SetUiElementText (word, cacheWord.Split('|')[1]);
 	}
 
 	public void SetPoints (int pts) {
-		this.points.text = pts.ToString () + " Points";
+		this.points.text = pts.ToString ();
 	}
 
 }

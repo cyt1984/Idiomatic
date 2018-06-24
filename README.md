@@ -13,6 +13,11 @@ Download Unity 3D [here](https://unity3d.com/pt/get-unity/download) or [here](ht
 
 #### Run
 
-Clone this repository and then create a new project on Unity 3D, replace the folder **Assets** from your ' new repository ' for the **Assets** in this repository and then start the Unity 3D.
+1. Download a executable for you system Windows, Mac or Linux on this [link](https://github.com/Sphinxs/Idiomatic/tree/master/Executable)
 
-**Obs** : Add the **Scenes** to the **Building Settings**
+2. Play online on [Itch](https://sphinxs.itch.io/idiomatic)
+
+3. Clone this repository and then create a new project on Unity 3D, replace the folder Assets from your ' new repository ' for the Assets in this repository and then start the Unity 3D.
+
+**Obs** : Add the Scenes to the Building Settings,
+
